@@ -12,10 +12,13 @@ class Veiculo{
 let voltaRapida = new Veiculo('V8')
 voltaRapida.entrandoNaPista()
 
-class Porsche extends Veiculo{
+class Porsche extends Veiculo implements CavalosMotor{
+
+    numeroCavalos: number
 
     constructor(){
         super('3.0 V6')
+        this.numeroCavalos = 250
     }
 
     entrandoNaPista(){
@@ -29,3 +32,7 @@ class Porsche extends Veiculo{
 
 let voltaPorsche = new Porsche()
 voltaPorsche.entrandoNaPista()
+
+interface CavalosMotor{
+    numeroCavalos: number
+}

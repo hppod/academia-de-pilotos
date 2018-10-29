@@ -25,7 +25,9 @@ voltaRapida.entrandoNaPista();
 var Porsche = /** @class */ (function (_super) {
     __extends(Porsche, _super);
     function Porsche() {
-        return _super.call(this, '3.0 V6') || this;
+        var _this = _super.call(this, '3.0 V6') || this;
+        _this.numeroCavalos = 250;
+        return _this;
     }
     Porsche.prototype.entrandoNaPista = function () {
         if (Math.random() >= 0.5) {
