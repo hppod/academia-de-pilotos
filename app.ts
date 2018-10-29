@@ -1,13 +1,4 @@
-class Veiculo {
 
-    constructor(public motor: string) {
-
-    }
-
-    entrandoNaPista() {
-        console.log(`Entrando na pista utilizando ${this.motor}`)
-    }
-}
 
 let voltaRapida = new Veiculo('V8')
 voltaRapida.entrandoNaPista()
@@ -33,9 +24,7 @@ class Porsche extends Veiculo implements CavalosMotor {
 let voltaPorsche = new Porsche()
 voltaPorsche.entrandoNaPista()
 
-interface CavalosMotor {
-    numeroCavalos: number
-}
+
 
 let bomParaPista = (voltaRapida: CavalosMotor) => voltaRapida.numeroCavalos > 300
 

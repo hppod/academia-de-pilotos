@@ -11,15 +11,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Veiculo = /** @class */ (function () {
-    function Veiculo(motor) {
-        this.motor = motor;
-    }
-    Veiculo.prototype.entrandoNaPista = function () {
-        console.log("Entrando na pista utilizando " + this.motor);
-    };
-    return Veiculo;
-}());
 var voltaRapida = new Veiculo('V8');
 voltaRapida.entrandoNaPista();
 var Porsche = /** @class */ (function (_super) {
