@@ -1,6 +1,10 @@
-var voltaRapida = new Veiculo('V8');
+"use strict";
+exports.__esModule = true;
+var carros_base_1 = require("./carros-base");
+var carros_1 = require("./carros");
+var voltaRapida = new carros_base_1.Veiculo('V8');
 voltaRapida.entrandoNaPista();
-var voltaPorsche = new Porsche();
+var voltaPorsche = new carros_1.Porsche();
 voltaPorsche.entrandoNaPista();
 var bomParaPista = function (voltaRapida) { return voltaRapida.numeroCavalos > 300; };
 console.log("O carro tem boa cavalaria para a pista? " + (bomParaPista(voltaPorsche) ? 'SIM' : 'NÃO'));

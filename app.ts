@@ -1,14 +1,11 @@
-
+import { Veiculo, CavalosMotor } from "./carros-base";
+import { Porsche } from "./carros";
 
 let voltaRapida = new Veiculo('V8')
 voltaRapida.entrandoNaPista()
 
-
-
 let voltaPorsche = new Porsche()
 voltaPorsche.entrandoNaPista()
-
-
 
 let bomParaPista = (voltaRapida: CavalosMotor) => voltaRapida.numeroCavalos > 300
 
