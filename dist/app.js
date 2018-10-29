@@ -8,3 +8,5 @@ var carroRapido = function (velocidade) {
 };
 var velocidadeFinal = 250;
 console.log("A velocidade final " + velocidadeFinal + " \u00E9 suficiente para ele ser considerado um carro r\u00E1pido? " + (carroRapido(velocidadeFinal) ? 'SIM' : 'NÃO'));
+var carro = function (modelo) { return console.log("O carro \u00E9 um " + modelo); };
+carro('Ferrari');

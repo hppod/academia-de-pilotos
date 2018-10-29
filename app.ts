@@ -11,3 +11,6 @@ let carroRapido = function (velocidade: number): boolean {
 
 let velocidadeFinal = 250
 console.log(`A velocidade final ${velocidadeFinal} é suficiente para ele ser considerado um carro rápido? ${carroRapido(velocidadeFinal) ? 'SIM' : 'NÃO'}`)
+
+let carro = (modelo: string) => console.log(`O carro é um ${modelo}`)
+carro('Ferrari')
