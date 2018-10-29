@@ -41,3 +41,5 @@ var Porsche = /** @class */ (function (_super) {
 }(Veiculo));
 var voltaPorsche = new Porsche();
 voltaPorsche.entrandoNaPista();
+var bomParaPista = function (voltaRapida) { return voltaRapida.numeroCavalos > 300; };
+console.log("O carro tem boa cavalaria para a pista? " + (bomParaPista(voltaPorsche) ? 'SIM' : 'NÃO'));

@@ -1,10 +1,10 @@
-class Veiculo{
+class Veiculo {
 
-    constructor(public motor: string){
+    constructor(public motor: string) {
 
     }
 
-    entrandoNaPista(){
+    entrandoNaPista() {
         console.log(`Entrando na pista utilizando ${this.motor}`)
     }
 }
@@ -12,19 +12,19 @@ class Veiculo{
 let voltaRapida = new Veiculo('V8')
 voltaRapida.entrandoNaPista()
 
-class Porsche extends Veiculo implements CavalosMotor{
+class Porsche extends Veiculo implements CavalosMotor {
 
     numeroCavalos: number
 
-    constructor(){
+    constructor() {
         super('3.0 V6')
         this.numeroCavalos = 250
     }
 
-    entrandoNaPista(){
-        if(Math.random() >= 0.5){
+    entrandoNaPista() {
+        if (Math.random() >= 0.5) {
             super.entrandoNaPista()
-        }else{
+        } else {
             console.log('A pista está lotada" Volte mais tarde!')
         }
     }
@@ -33,6 +33,10 @@ class Porsche extends Veiculo implements CavalosMotor{
 let voltaPorsche = new Porsche()
 voltaPorsche.entrandoNaPista()
 
-interface CavalosMotor{
+interface CavalosMotor {
     numeroCavalos: number
 }
+
+let bomParaPista = (voltaRapida: CavalosMotor) => voltaRapida.numeroCavalos > 300
+
+console.log(`O carro tem boa cavalaria para a pista? ${bomParaPista(voltaPorsche) ? 'SIM' : 'NÃO'}`)
